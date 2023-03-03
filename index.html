@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscuro/Claro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toggle"></div>
+    <section id="inicio">
+    <header>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#info">Información</a>
+            <a href="#compra">Compra</a>
+        </div>
+        <img src="./img/1.jpg" class="banner">
+    </header>
+</section>
+
+    <section id="info"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat faucibus turpis, sed suscipit metus viverra sodales. Maecenas molestie nulla eget sodales consectetur. Integer bibendum porttitor dui eget venenatis. Vivamus vitae erat a augue iaculis molestie nec a ipsum. Sed vehicula cursus dui. Suspendisse fermentum felis eget urna tempus fermentum. Aenean bibendum ut neque eu dignissim. Pellentesque interdum orci eget eros porta varius.
+        Cras eu sem venenatis, viverra felis id, scelerisque nulla. Maecenas sapien nisl, accumsan eu tempus vel, fermentum nec ex. Ut lectus nibh, fringilla vitae pellentesque nec, sodales et ligula. Nam elementum condimentum consectetur. Suspendisse potenti. Morbi porttitor elit lectus, ac vestibulum purus egestas eget. Phasellus malesuada cursus euismod. Donec tristique justo purus, non consequat nunc sagittis in. Praesent placerat aliquet est quis eleifend. Pellentesque sem nisi, tincidunt sit amet odio luctus, congue malesuada velit. Nulla feugiat aliquet elementum. Curabitur blandit interdum odio id molestie. Mauris interdum volutpat ornare. Aenean eu est mollis, finibus purus et, commodo tellus. Nam cursus mi non magna lacinia imperdiet.</p>
+    </section>
+    
+    <section id="compra"></section>
+
+
+    <script>
+        const body = document.querySelector('body');
+        document.querySelector('.toggle').onclick = function() {
+            body.classList.toggle('light')
+        }
+        window.addEventListener("scroll",function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <footer>ola</footer>
+</body>
+</html>
